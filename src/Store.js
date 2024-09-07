@@ -326,10 +326,10 @@ function createNavigationOptions(params) {
 
     if (navigationParams.hideNavBar != null) {
       if (navigationParams.hideNavBar) {
-        res.header = null;
+        res.headerShown = null;
       }
     } else if (hideNavBar) {
-      res.header = null;
+      res.headerShown = null;
     }
 
     if (navTransparent) {
