@@ -28,7 +28,7 @@ export function BackButton(state) {
   // returning react-navigation's back button well styled for ios and android if rnrf4-supported customization
   // is not required
   if (!state.backButtonImage) {
-    return <HeaderBackButton onPress={onPress} title={state.backTitle} titleStyle={textButtonStyle} tintColor={tintColor} truncatedTitle={state.truncatedTitle} />;
+    return <HeaderBackButton onPress={onPress} label={state.backTitle} titleStyle={textButtonStyle} tintColor={tintColor} truncatedTitle={state.truncatedTitle} />;
   }
 
   const text = state.backTitle ? <Text style={textButtonStyle}>{state.backTitle}</Text> : null;
