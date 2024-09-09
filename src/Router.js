@@ -6,9 +6,9 @@ import defaultStore from './defaultStore';
 import pathParser from './pathParser';
 
 class App extends React.Component {
+  hardwareBackPressSubscriber;
+  urlSubscriber;
   static propTypes = {
-    hardwareBackPressSubscriber;
-    urlSubscriber;
     navigator: PropTypes.func,
     backAndroidHandler: PropTypes.func,
     uriPrefix: PropTypes.string,
